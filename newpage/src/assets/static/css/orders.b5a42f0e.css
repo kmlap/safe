@@ -1,0 +1,245 @@
+.arbitrage_record {
+    padding-bottom: .6rem;
+    font-weight: 500
+}
+
+.arbitrage_record .header {
+    position: relative;
+    padding: .27rem .44rem;
+    text-align: center
+}
+
+.arbitrage_record .header .back {
+    float: left;
+    font-size: .4rem
+}
+
+.arbitrage_record .switch_container {
+    margin-top: .32rem
+}
+
+.arbitrage_record .switch_container .switch_content {
+    margin: 0 auto;
+    padding: .08rem;
+    width: 4.44rem;
+    background: #f5f6f8;
+    border-radius: .2rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center
+}
+
+.arbitrage_record .switch_container .switch_content .switch_item {
+    width: 2.14rem;
+    height: .72rem;
+    line-height: .72rem;
+    text-align: center;
+    font-size: .26rem;
+    color: #353f52;
+    font-weight: 600
+}
+
+.arbitrage_record .switch_container .switch_content .switch_item.active {
+    background: #fff;
+    border-radius: .2rem
+}
+
+.arbitrage_record .record_list {
+    padding: 0 .36rem
+}
+
+.arbitrage_record .record_list .record_item {
+    margin-top: .56rem;
+    background: #fff;
+    box-shadow: .06rem .12rem .2rem #0000000d;
+    border-radius: .3rem
+}
+
+.arbitrage_record .record_list .record_item .pro_info {
+    padding: 0 .32rem;
+    height: 1.14rem;
+    border-bottom: 1px solid rgba(216, 216, 216, .5);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center
+}
+
+.arbitrage_record .record_list .record_item .pro_info .pro_cycle {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-size: .36rem;
+    color: #353f52
+}
+
+.arbitrage_record .record_list .record_item .pro_info .pro_cycle .icon_save {
+    margin-right: .2rem;
+    width: .48rem
+}
+
+.arbitrage_record .record_list .record_item .record_info .section {
+    padding: 0 !important;
+    margin-top: .32rem
+}
+
+.arbitrage_record .record_list .record_item .record_info .section .section_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .32rem;
+    align-content: center;
+    align-items: center;
+    margin-bottom: .32rem
+}
+
+.arbitrage_record .record_list .record_item .record_info .section .section_item .item_name {
+    color: #353f52
+}
+
+.arbitrage_record .record_list .record_item .record_info .section .section_item .item_value {
+    color: #5b616e
+}
+
+.arbitrage_record .record_list .record_item .order_info {
+    padding: 0 .4rem;
+    height: 1.04rem;
+    background: #f5f6f8;
+    box-shadow: 6px 12px 20px #0000000d;
+    border-radius: 0 0 .3rem .3rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center
+}
+
+.arbitrage_record .record_list .record_item .order_info .order_status {
+    display: flex;
+    align-content: center;
+    align-items: center
+}
+
+.arbitrage_record .record_list .record_item .order_info .order_status .button_status {
+    padding: 0 .4rem;
+    display: inline-block;
+    height: .65rem;
+    line-height: .65rem;
+    background: #1652f0;
+    border-radius: .2rem;
+    border: none;
+    color: #fff
+}
+
+.arbitrage_record .no_data_content {
+    margin-top: .4rem;
+    padding-bottom: .4rem;
+    text-align: center
+}
+
+.arbitrage_record .no_data_content .title {
+    color: #aaa;
+    font-size: .3rem
+}
+
+.arbitrage_record .no_data_content .img_no_data {
+    margin-bottom: .56rem;
+    width: 3.7rem;
+    height: auto
+}
+
+.arbitrage_record .load-more {
+    margin: 0 auto;
+    margin-top: .32rem;
+    text-align: center;
+    color: #1652f0
+}
+
+.arbitrage_record .no-more-data {
+    margin: 0 auto;
+    margin-top: .32rem;
+    text-align: center
+}
+
+ .van-loading {
+    text-align: center;
+    margin-top: .5rem
+}
+
+.sell-coin {
+    font-weight: 600
+}
+
+.rise-fall {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.v-button {
+    width: 2.66rem;
+    height: .84rem;
+    font-size: .28rem;
+    border-radius: 14px
+}
+
+.load-more-btn {
+    margin-top: .6rem;
+    text-align: center
+}
+
+.nomore-tips {
+    color: #353f5280;
+    margin-top: .6rem;
+    text-align: center
+}
+
+.uppercase {
+    text-transform: uppercase
+}
+
+.fs-26 {
+    font-size: .26rem
+}
+
+.order-info {
+    padding: .2rem .4rem;
+    height: fit-content;
+    background: #f5f6f8;
+    box-shadow: 6px 12px 20px #0000000d;
+    border-radius: 0 0 .3rem .3rem;
+    align-content: center;
+    align-items: center
+}
+
+.order-info .current-data {
+    display: flex;
+    justify-content: space-between
+}
+
+.order-info .current-data .buy-time {
+    display: flex;
+    flex-direction: column
+}
+
+.order-info .current-data .count-down {
+    align-self: center
+}
+
+.order-info .current-data .count-down .timer {
+    padding: 0 .4rem;
+    display: inline-block;
+    height: .65rem;
+    width: 1.8rem;
+    text-align: center;
+    line-height: .65rem;
+    background: #1652f0;
+    border-radius: .2rem;
+    border: none;
+    color: #fff;
+    white-space: nowrap
+}
+
+.order-info .order-data {
+    display: flex;
+    justify-content: space-between
+}

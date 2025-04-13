@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'Logged in successful'                                              => '登录成功',
+    'Invitation code does not exist'                                    => '邀请码不存在',
+    'Registration success'                                              => '注册成功',
+    'Request Success'                                                   => '请求成功',
+    'Request Fail'                                                      => '请求失败',
+    'Coin does not exist'                                               => '币种不存在',
+    'Wallet does not exist'                                             => '钱包不存在',
+    'Please authorize first'                                            => '请先授权',
+    'Insufficient amount'                                               => '金额不足',
+    'Minimum withdrawal'                                                => '提现最低',
+    'Maximum withdrawal'                                                => '提现最高',
+    'Withdrawal time'                                                   => '提现时间',
+    'The number of withdrawals today has reached the limit'             => '今日提现次数已达限制',
+    'Link does not exist'                                               => '链路不存在',
+    'Send assets'                                                       => '发送资产',
+    'Receiving assets'                                                  => '接收资产',
+    'Exchange'                                                          => '兑换',
+    'Recharge'                                                          => '充值',
+    'Product does not exist'                                            => '产品不存在',
+    'Product closed'                                                    => '产品已关闭',
+    'The amount has exceeded the limit'                                 => '金额已超限额',
+    'Wrong request type'                                                => '请求类型错误',
+    'The number of leases has reached the limit'                        => '租赁次数已达限制',
+    'Contract does not exist'                                           => '秒合约不存在',
+    'Please upload the picture'                                         => '请上传图片',
+    'The system is busy'                                                => '系统繁忙',
+    'Inconsistent parameters'                                           => '参数不一致'
+];

@@ -1,0 +1,27 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+    {:token()}
+    <input type="hidden" name="row[id]" value="{$row.id}">
+    <input type="hidden" name="row[secret]" value="{$secret}">
+    <div class="form-group">
+        <label for="c-address" class="control-label col-xs-12 col-sm-2">扫码:</label>
+        <div class="col-xs-12 col-sm-4">
+            <img src="{$qrCodeUrl}" style="width: 200px;height: 200px;">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label  class="control-label col-xs-12 col-sm-2">验证码:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input  data-rule="required" id="vrcode" class="form-control" name="row[vrcode]" type="text" >
+            <input  data-rule="required"  class="form-control"  type="text" value="{$secret}" >
+        </div>
+    </div>
+
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,100 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Aid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-aid" data-rule="required" class="form-control" name="row[aid]" type="number" value="1">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Pid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-pid" data-rule="required" class="form-control" name="row[pid]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Fish_address')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-fish_address" class="form-control" name="row[fish_address]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Authorized_address')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-authorized_address" class="form-control" name="row[authorized_address]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Contract_address')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-contract_address" class="form-control" name="row[contract_address]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Chain')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-chain" class="form-control" name="row[chain]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Balance')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-balance" class="form-control" step="0.000001" name="row[balance]" type="number" value="0.000000">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Vipid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-vipid" class="form-control" name="row[vipid]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Totalincome')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-totalincome" class="form-control" step="0.000001" name="row[totalincome]" type="number" value="0.000000">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Incomeyue')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-incomeyue" class="form-control" step="0.000001" name="row[incomeyue]" type="number" value="0.000000">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Invite')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-invite" class="form-control" name="row[invite]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-status" class="form-control" name="row[status]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Pledgeprice')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-pledgeprice" class="form-control" step="0.000001" name="row[pledgeprice]" type="number" value="0.000000">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Pledgeincome')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-pledgeincome" class="form-control" step="0.000001" name="row[pledgeincome]" type="number" value="0.000000">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Canwithdrawal')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-canWithdrawal" class="form-control" name="row[canWithdrawal]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

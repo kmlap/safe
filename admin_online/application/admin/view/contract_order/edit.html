@@ -1,0 +1,112 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Uid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-uid" data-rule="required" min="0" class="form-control" name="row[uid]" type="number" value="{$row.uid|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Contract_config_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-contract_config_id" data-rule="required" min="0" data-source="contract_config/index" class="form-control selectpage" data-field="coin" name="row[contract_config_id]" type="text" value="{$row.contract_config_id|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Start_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-start_time" data-rule="required" min="0" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[start_time]" type="text" value="{:$row.start_time?datetime($row.start_time):''}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('End_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-end_time" data-rule="required" min="0" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[end_time]" type="text" value="{:$row.end_time?datetime($row.end_time):''}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Increase')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-increase" data-rule="required" class="form-control" step="0.0001" name="row[increase]" type="number" value="{$row.increase|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Odds')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-odds" data-rule="required" min="0" class="form-control" step="0.0001" name="row[odds]" type="number" value="{$row.odds|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Amount')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-amount" data-rule="required" min="0" class="form-control" step="0.000001" name="row[amount]" type="number" value="{$row.amount|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Amount_unit')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-amount_unit" data-rule="required" class="form-control" name="row[amount_unit]" type="text" value="{$row.amount_unit|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            
+            <div class="radio">
+            {foreach name="statusList" item="vo"}
+            <label for="row[status]-{$key}"><input id="row[status]-{$key}" name="row[status]" type="radio" value="{$key}" {in name="key" value="$row.status"}checked{/in} /> {$vo}</label> 
+            {/foreach}
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Start_price')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-start_price" data-rule="required" min="0" class="form-control" step="0.000001" name="row[start_price]" type="number" value="{$row.start_price|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('End_price')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-end_price" data-rule="required" min="0" class="form-control" step="0.000001" name="row[end_price]" type="number" value="{$row.end_price|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Lose_win')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-lose_win" data-rule="required" min="0" class="form-control selectpicker" name="row[lose_win]">
+                {foreach name="loseWinList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.lose_win"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Profit_loss')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-profit_loss" data-rule="required" class="form-control" step="0.000001" name="row[profit_loss]" type="number" value="{$row.profit_loss|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Risk_mangement')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-risk_mangement" data-rule="required" min="0" class="form-control selectpicker" name="row[risk_mangement]">
+                {foreach name="riskMangementList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.risk_mangement"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

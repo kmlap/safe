@@ -1,0 +1,17 @@
+{
+    "name":"SafePal-web3",
+    "short_name":"SafePal-web3",
+    "icons": [
+        {
+            "src": "/dist/web128_128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/dist/web128_128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        }
+    ],
+    "display": "standalone"
+}

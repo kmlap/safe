@@ -1,0 +1,58 @@
+
+<form class="form-horizontal" method="POST" role="form" action="" style="margin-left: auto;margin-right: auto;margin-top: 50px; padding: 10px;">
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Low_withdraw_amount')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-low_withdraw_amount" data-rule="required" min="0" class="form-control" step="0.000001" name="row[low_withdraw_amount]" type="number" value="{$row.low_withdraw_amount}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('High_withdraw_amount')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-high_withdraw_amount" data-rule="required" min="0" class="form-control" step="0.000001" name="row[high_withdraw_amount]" type="number" value="{$row.high_withdraw_amount}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Day_start_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-day_start_time" data-rule="required" min="0" class="form-control datetimepicker" data-date-format="HH:mm:ss" data-use-current="true" name="row[day_start_time]" type="text" value="{$row.day_start_time}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Day_end_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-day_end_time" data-rule="required" min="0" class="form-control datetimepicker" data-date-format="HH:mm:ss" data-use-current="true" name="row[day_end_time]" type="text" value="{$row.day_end_time}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Day_withdraw_num')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-day_withdraw_num" data-rule="required" min="0" class="form-control" name="row[day_withdraw_num]" type="number" value="{$row.day_withdraw_num}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Commission_calc_mode')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-commission_calc_mode" data-rule="required" min="0" class="form-control selectpicker" name="row[commission_calc_mode]">
+                {foreach name="commissionCalcModeList" item="vo"}
+                <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Commission_val')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-commission_val" data-rule="required" min="0" class="form-control" step="0.000001" name="row[commission_val]" type="number" value="{$row.commission_val}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <span class="btn btn-success submit-btn">保存</span>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

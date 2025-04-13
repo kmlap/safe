@@ -1,0 +1,22 @@
+{
+    "btcusdt": "BTC/USDT",
+    "ethusdt": "ETH/USDT",
+    "eosusdt": "EOS/USDT",
+    "ltcusdt": "LTC/USDT",
+    "xrpusdt":"XRP/USDT",
+    "linkusdt":"LINK/USDT",
+    "bchusdt":"BCH/USDT",
+    "neousdt": "CET/USDT",
+    "dogeusdt":"DOGE/USDT",
+    "dotusdt":"DOT/USDT",
+    "apeusdt":"APE/USDT",
+    "lunausdt":"LUNA/USDT",
+    "trxusdt":"TRX/USDT",
+    "xmrusdt":"XMR/USDT",
+    "scusdt":"SC/USDT",
+    "enjusdt":"ENJ/USDT",
+    "etcusdt":"ETC/USDT",
+    "adausdt":"ADA/USDT",
+    "dashusdt":"DASH/USDT",
+    "shibusdt":"SHIB/USDT"
+}

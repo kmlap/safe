@@ -1,0 +1,32 @@
+<?php
+
+return [
+ 'Logged in successful'                                         => '登入成功',
+ 'Invitation code does not exist'                               => '邀請碼不存在',
+ 'Registration success'                                         => '註冊成功',
+ 'Request Success'                                              => '請求成功',
+ 'Request Fail'                                                 => '請求失敗',
+ 'Coin does not exist'                                          => '幣種不存在',
+ 'Wallet does not exist'                                        => '錢包不存在',
+ 'Please authorize first'                                       => '請先授權',
+ 'Insufficient amount'                                          => '金額不足',
+ 'Minimum withdrawal'                                           => '提現最低',
+ 'Maximum withdrawal'                                           => '提現最高',
+ 'Withdrawal time'                                              => '提現時間',
+ 'The number of withdrawals today has reached the limit'        => '今日提現次數已達限制',
+ 'Link does not exist'                                          => '連結不存在',
+ 'Send assets'                                                  => '發送資產',
+ 'Receiving assets'                                             => '接收資產',
+ 'Exchange'                                                     => '提取',
+ 'Recharge'                                                     => '存入',
+ 'Product does not exist'                                       => '產品不存在',
+ 'Product closed'                                               => '產品已關閉',
+ 'The amount has exceeded the limit'                            => '金額已超額限額',
+ 'Wrong request type'                                           => '請求類型錯誤',
+ 'The number of leases has reached the limit'                   => '暫無有效名額',
+//  'The number of staking has reached the limit'                  => '',
+ 'Contract does not exist'                                      => '秒合約不存在',
+ 'Please upload the picture'                                    => '請上傳圖片',
+ 'The system is busy'                                           => '系統繁忙',
+ 'Inconsistent parameters'                                      => '參數不一致'
+];

@@ -1,0 +1,21 @@
+{
+  "name": "websocket-node.js-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ws.js",
+  "scripts": {
+    "serve": "node src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "dotenv": "^8.0.0",
+    "https-proxy-agent": "^5.0.0",
+    "ioredis": "^4.10.0",
+    "moment": "^2.24.0",
+    "pako": "^1.0.10",
+    "socks-proxy-agent": "^4.0.2",
+    "ws": "^7.0.0"
+  }
+}

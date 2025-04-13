@@ -1,0 +1,32 @@
+<?php
+
+return [
+    'Id'             => 'ID',
+    'Name_en'        => '名称[en_US]',
+    'Name_cn'        => '名称[zh_CN]',
+    'Type'           => '类型',
+    'Type 1'         => '付费',
+    'Type 2'         => '免费',
+    'Price'          => '价格USDT',
+    'Low_produce'    => '最低产出 (主币:ETH)',
+    'High_produce'   => '最高产出 (主币:ETH)',
+    'Expire_val'     => '有效期',
+    'Expire_unit'    => '有效期单位',
+    'Expire_unit 1'  => '日',
+    'Expire_unit 2'  => '月',
+    'Buy_num_mode'   => '购买次数模式',
+    'Buy_num_mode 1' => '不包括过期',
+    'Buy_num_mode 2' => '包括过期',
+    'Allow_buy_num'  => '允许购买次数',
+    'Power'          => '功率W',
+    'Calc'           => '算力TH/h',
+    'Stars'          => '指数',
+    'Image'          => '图片',
+    'Describe_en'    => '描述[en_US]',
+    'Describe_cn'    => '描述[zh_CN]',
+    'Status'         => '状态',
+    'Status 1'       => '上架',
+    'Status 0'       => '下架',
+    'Createtime'     => '创建时间',
+    'Updatetime'     => '更新时间'
+];

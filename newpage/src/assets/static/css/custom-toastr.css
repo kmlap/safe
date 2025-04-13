@@ -1,0 +1,11 @@
+.toast-container > .custom-toastr {
+  margin-bottom: 75px;
+}
+
+.custom-toastr:last-of-type {
+  margin-bottom: 75px;
+}
+
+.custom-toastr:not(:last-of-type) {
+  margin-bottom: 15px;
+}

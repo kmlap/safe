@@ -1,0 +1,42 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+  <div class="form-group">
+    <label class="control-label col-xs-12 col-sm-2">{:__('方式')}:</label>
+    <div class="col-xs-12 col-sm-8">
+      <div class="radio">
+        <label for="status-1"><input id="status-1" name="status" type="radio" value="2" checked /> 匹配</label>
+        <label for="status-0"><input id="status-0" name="status" type="radio" value="0" /> 拒绝</label>
+      </div>
+    </div>
+  </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('银行卡号')}:</label>
+        <div class="col-xs-12 col-sm-8">
+          <input id="c-card" class="form-control" name="card"  value="">
+        </div>
+  </div>
+   <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('银行代号')}:</label>
+        <div class="col-xs-12 col-sm-8">
+          <input id="c-card" class="form-control" name="card_code"  value="">
+        </div>
+  </div>
+    <div class="form-group">
+    <label class="control-label col-xs-12 col-sm-2">{:__('金额')}:</label>
+    <div class="col-xs-12 col-sm-8">
+      <input id="c-transfer_amount" class="form-control" name="transfer_amount"  value="">
+    </div>
+  </div>
+  <!--<div class="form-group">-->
+  <!--  <label class="control-label col-xs-12 col-sm-2">{:__('备注')}:</label>-->
+  <!--  <div class="col-xs-12 col-sm-8">-->
+  <!--    <input id="c-remark" class="form-control" name="remark"  value="">-->
+  <!--  </div>-->
+  <!--</div>-->
+  <div class="form-group layer-footer">
+    <input name="user_id" value="{$info.id}" class="hidden">
+    <label class="control-label col-xs-12 col-sm-2"></label>
+    <div class="col-xs-12 col-sm-8">
+      <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+    </div>
+  </div>
+</form>

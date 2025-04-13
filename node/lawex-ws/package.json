@@ -1,0 +1,19 @@
+{
+  "name": "etf-ws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.8.15",
+    "dotenv": "^8.0.0",
+    "ioredis": "^4.10.0",
+    "pako": "^1.0.10",
+    "uuid": "^3.3.2",
+    "ws": "^7.0.1"
+  }
+}
